@@ -1,0 +1,19 @@
+﻿<Window x:Class="RecipeAppPOE.RecipeAmount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeAppPOE"
+        mc:Ignorable="d"
+        Title="RecipeAmount" Height="409" Width="647">
+    <Grid x:Name="RecipeAmountWindow">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://t3.ftcdn.net/jpg/03/33/89/46/360_F_333894601_WlbRs0ASAMiz0FkjH4j1ut0D6APFVo4s.jpg"/>
+        </Grid.Background>
+        <Label x:Name="recipeAmountLbl" Content="How any recipes would you like to add?" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
+        <TextBox x:Name="recipeAmountTxt" HorizontalAlignment="Center" Margin="0,197,0,0" TextWrapping="Wrap" Text="{Binding ElementName=recipeAmountSlider , Path= Value}" VerticalAlignment="Top" Width="120"/>
+        <Slider x:Name="recipeAmountSlider" HorizontalAlignment="Center" Margin="0,269,0,0" VerticalAlignment="Top" Width="205" TickPlacement="TopLeft" IsSnapToTickEnabled="True" Cursor="Hand" SmallChange="1"/>
+        <Button x:Name="recipeAmountConfirmBtn" Content="Confirm" HorizontalAlignment="Center" Margin="0,329,0,0" VerticalAlignment="Top" Click="recipeAmountConfirmBtn_Click"/>
+
+    </Grid>
+</Window>

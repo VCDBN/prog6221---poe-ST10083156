@@ -1,0 +1,28 @@
+﻿<Window x:Class="RecipeAppPOE.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeAppPOE"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="450" Width="800">
+    <Grid x:Name="MenuWindow1">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://image.slidesdocs.com/responsive-images/background/white-food-kitchen-hand-painted-cute-chef-powerpoint-background_3427a1bf88__960_540.jpg"/>
+        </Grid.Background>
+        <Label x:Name="MenuLbl" Content="Menu" HorizontalAlignment="Left" Margin="352,27,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Gabriola" FontSize="48" FontWeight="Bold" FontStyle="Italic"/>
+        <Label x:Name="addRecipeLbl" Content="1. Add new recipes" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20"/>
+        <Label x:Name="viewRecipesLbl" Content="2. View all recipes" HorizontalAlignment="Left" Margin="318,161,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" />
+        <Label x:Name="viewSpecificRecipeLbl" Content="3. View specific recipe" HorizontalAlignment="Center" Margin="0,198,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" />
+        <Label x:Name="filterRecipesLbl" Content="4. Filter recipes" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Margin="0,235,0,0" FontSize="20"/>
+        <Label x:Name="clearRecipesLbl" Content="5. Clear all recipes (restart application)" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Margin="0,272,0,0" FontSize="20" />
+        <ComboBox x:Name="selectionComboBox" HorizontalAlignment="Left" Margin="342,314,0,0" VerticalAlignment="Top" Width="120" IsDropDownOpen="True">
+            <ComboBoxItem x:Name="number1" Content="1"></ComboBoxItem>
+            <ComboBoxItem x:Name="number2" Content="2"></ComboBoxItem>
+            <ComboBoxItem x:Name="number3" Content="3"></ComboBoxItem>
+            <ComboBoxItem x:Name="number4" Content="4"></ComboBoxItem>
+            <ComboBoxItem x:Name="number5" Content="5"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="menuConfirmBtn" Content="Confirm" HorizontalAlignment="Left" Margin="382,357,0,0" VerticalAlignment="Top" Click="menuConfirmBtn_Click"/>
+    </Grid>
+</Window>

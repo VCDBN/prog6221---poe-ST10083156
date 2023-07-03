@@ -1,0 +1,22 @@
+﻿<Window x:Class="RecipeAppPOE.FoodGroupFilter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeAppPOE"
+        mc:Ignorable="d"
+        Title="FoodGroupFilter" Height="350" Width="425">
+    <Window.Background>
+        <ImageBrush ImageSource="https://i.pinimg.com/564x/2e/e9/18/2ee918427712255bc116749e33616d33.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+
+        <Label x:Name="foodGroupFilterLbl" Content="Enter the food group to filter" HorizontalAlignment="Left" Margin="131,82,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="filterTxt" HorizontalAlignment="Left" Margin="152,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Button x:Name="confirmFilterBtn" Content="Confirm" HorizontalAlignment="Left" Margin="189,184,0,0" VerticalAlignment="Top" Click="confirmFilterBtn_Click"/>
+
+    </Grid>
+</Window>
