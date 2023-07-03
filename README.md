@@ -9,4 +9,4 @@ The application is coded in C# and runs on the visual studio 2002 IDE. Once the 
 ##Code Functionality## The project makes use of multiple classes and windows while a Recipe class, an Ingredient class, a Step class are used to help with the backend management of the program, as well as storage of data. The three classes have various variables that represent properties for each object created for the classes. Each class holds its own List to store the items of that class' Type.
 Each window has xaml designing done on it to make it pleasant for users as well as c# backend for the functionslity of each window and the navigation between the windows.
 
-##Fixes from part 2## From part 2
+##Fixes from part 2## From part 2k
